@@ -1,0 +1,271 @@
+:root{
+  --bg-color:#F8F8F8;
+}
+
+
+* {
+box-sizing: border-box;
+font-family: 'League Spartan', sans-serif;
+margin: 0;
+padding:0;
+}
+
+ul{
+  list-style-type: none;
+}
+
+a{
+  text-decoration: none;
+  color: #222222;
+}
+p{
+  margin: 10px 0;
+}
+
+img{
+  width: 100%;
+}
+
+span {
+  color: rgb(240, 1, 1);
+  font-weight: bold;
+}
+
+/*Banner*/
+.navbar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 30px;
+}
+.navbar ul{
+  display: flex;
+  justify-content: space-around;
+  margin: 0 5px;
+}
+.navbar ul li {
+  margin: 0 25px;
+}
+.sign-in {
+  background: rgb(240, 1, 1);
+  color: white;
+  border-radius: 10px;
+  padding: 3px;
+}
+.showcase{
+  background-image: 
+  linear-gradient(to right , rgba(221, 219, 219, 0.952), rgba(255, 255, 255, 0.73)),
+  url('img/mountain2.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: auto;
+  max-width: auto;
+  position: relative;
+}
+/*Header Title*/
+.showcase-text{
+  max-width: 45rem;
+  padding: 30px;
+}
+.showcase h2{
+  font-size: 50px;
+}
+.showcase p{
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+
+.booking-menu{
+  position: relative;
+  font-size: 16px;
+  display: flex;
+  flex-direction: row;
+  overflow: visible;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 30px 48px;
+  width: 1140px;
+  height: 100px;
+
+
+  background: rgba(248, 248, 248, 0.836);
+  box-shadow: 0px 15px 52px rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(5px);
+  border-radius: 15px;
+
+}
+.tab{
+  display: flex;
+  flex-direction: column;
+}
+
+/*Section 1 and 2 buttons*/
+button {
+  margin-top: 100px;
+  border-color: rgb(240, 1, 1);
+  background-color: #F8F8F8;
+  color:rgb(240, 1, 1);
+  padding: 5px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  }
+  
+
+
+/*Section 1*/
+
+.section1{
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+}
+.container{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+
+}
+#days{
+  color:#E01B1B;
+  background-color:#FFEDED;
+  border-radius: 50px;
+  width: auto;
+  height: 15px;
+}
+.card-days{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.star{
+  padding: 5px;
+  background-color:#FFF9E4;
+  border-radius: 50px;
+  width: auto;
+}
+.card-image {
+  height: 240px;
+  margin-bottom: 15px;
+  background-size: cover;
+  border-radius: 20px;
+} 
+.hiking-1{
+  background-image: url(img/hiking2.jpg);
+  border-radius: 15px;
+}
+.hiking-2{
+  background-image: url(img/camping2.jpg);
+  border-radius: 15px;
+}
+.hiking-3{
+  background-image: url(img/private_tour2.jpg);
+  border-radius: 15px;
+}
+
+/*Section 2*/
+.section2{
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  background: #F8F8F8;
+}
+.sec2-title{
+  display: flex;
+  flex-direction: column;
+}
+.container-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 60px;
+  border-radius: 30px;
+}
+
+
+/*Section 3*/ 
+.sec3-title{
+  display: flex;
+  flex-direction: column;
+  margin: 2em;
+}
+.container-3{
+    display: grid;
+    height: 400px;
+    gap: 5px;
+    margin: 2em;
+  }
+.hiking{
+  background-image: url(img/hiking.jpg);
+  background-size: cover;
+  grid-column: 1/4;
+  grid-row: 1/2;
+  border-radius: 5px;
+}
+
+.family-trips{
+  background-image: url(img/canyon.jpg);
+  background-size: cover;
+grid-column:3/4;
+grid-row: 1/4;
+border-radius: 5px;
+}
+.rafting{
+  background-image: url(img/rafting.jpg);
+  background-size: cover;
+grid-column:1/2;
+grid-row: 3/4;
+border-radius: 5px;
+}
+.camping{
+  background-image: url(img/camping3.jpg);
+  background-size: cover;
+grid-column:2/3;
+grid-row: 3/4;
+border-radius: 5px;
+}
+
+
+/*Section 4*/
+.container-4{
+  display: flex;
+  flex-direction: row;
+  padding: 30px;
+}
+
+
+
+/*Footer*/
+.footer{
+  background-color: #222222;
+  color: white;
+
+  padding: 15px;
+}
+
+.secfooter{
+ width: 100%;
+ display: grid;
+ grid-template-columns: 2fr 1fr 1fr 1fr ;
+ margin: 2em;
+}
+
+.footer-col ul li a{
+ color: white;
+}
+
+.social-links{
+  padding: 10px;
+}
+.fa-brands{
+  color: #F8F8F8;
+}
